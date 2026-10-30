@@ -1,34 +1,38 @@
 # slobylo.com
 
 Static website for **Slo · by Lo** — Tanisha Lo's luxury wellness consultancy.
-Plain HTML/CSS/JS. No build step, no framework, no dependencies.
+Plain HTML/CSS with a few lines of inline JS. No build step, no framework, no dependencies.
+Live at https://slobylo.com. Full handover notes for maintainers are in `CLAUDE.md`.
 
 ## Files
 
 | File | What it is |
 |------|------------|
-| `index.html` | The whole site — every section, all copy |
+| `index.html` | The whole site — every section, all copy, inline menu script |
 | `styles.css` | All styling. Brand colours are tokens at the top (`:root`) |
-| `main.js` | Nav fill on scroll, mobile menu, footer year |
+| `assets/tanisha.jpg` | Founder portrait (About section) |
 | `favicon.svg` | Browser-tab icon (logomark) |
 | `CNAME` | Tells GitHub Pages to serve the site at slobylo.com |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
+| `CLAUDE.md` | Handover notes and brand rules for whoever maintains the site |
 
 ## Page sections (in order, as HTML ids)
 
-`#top` hero · `#services` · `#how` pipeline · `#work` flagship evening · `#pricing` full services table · quote · `#why` · `#about` · `#contact` · footer
+`#top` nav · hero · `#services` ledger · `#how` pipeline · `#evening` sample evening · `#why` · quote · `#about` · `#contact` · footer
 
 ## Editing rules (for whoever maintains this — human or Claude)
 
-Follow the design brief (`slo-website-design-brief.md`). The essentials:
+Follow `CLAUDE.md` and the design brief (`slo-website-design-brief.md`). The essentials:
 
 - Fonts: Cormorant Garamond italic 300 for headings, Plus Jakarta Sans 300 for body. Never bold headings.
 - Colours: only the tokens in `styles.css :root`. No pure black or white.
-- No rounded corners, no shadows, no gradients (except the faint radial glows already in the dark sections).
-- Copy: short sentences. Never use *holistic, journey, transformative, wellness ritual, self-care, sacred, heal your body, empowering*. Headings are claims, not labels. Prices always in SGD.
+- No rounded corners, no shadows, no gradients.
+- Copy: short sentences. Never use *holistic, journey, transformative, wellness ritual, self-care, sacred, heal your body, empowering*. Headings are claims, not labels. No prices on the site — enquiries go to email.
 - "Slo" in third person; "I" only in Tanisha's bio.
 
 ## Deploy — GitHub Pages + Namecheap
+
+Already set up (October 2026): Pages serves `main` / root at slobylo.com with HTTPS enforced. Every push to `main` goes live in about a minute. The steps below are for reference.
 
 1. Push these files to the root of `main` in `Slo-by-Lo/slobylo-website`.
 2. GitHub repo → **Settings → Pages** → Source: *Deploy from a branch* → Branch `main`, folder `/ (root)` → Save.
@@ -47,4 +51,4 @@ Follow the design brief (`slo-website-design-brief.md`). The essentials:
 
 ## Adding photography later
 
-Put images in an `/images` folder, export as WebP around 2000px wide (under 400 KB each), and follow the photography direction in the brief: golden hour, film-like grade, never stock. The `#work` section is the natural first home for event imagery.
+Put images in the `/assets` folder, export as WebP around 2000px wide (under 400 KB each), and follow the photography direction in the brief: golden hour, film-like grade, never stock. The founder portrait is already in `#about`; the `#evening` section is the natural home for event imagery.
