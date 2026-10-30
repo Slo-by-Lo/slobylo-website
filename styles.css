@@ -14,6 +14,7 @@
   --goldD:  #8A7A58;
   --muted:  #6A7A8A;
   --blue:   #4A6A8A;
+  --logoBlue: #8CA8BF;  /* logo only: outer ring + dot on dark */
 
   --rule:   rgba(22, 32, 46, 0.10);
   --ruleDk: rgba(196, 168, 122, 0.14);
@@ -116,8 +117,8 @@ a { color: inherit; text-decoration: none; }
   width: 30px;
   height: 30px;
   color: var(--cream);
-  --o1: .30; --o2: .45; --o3: .65; --o4: .90;
-  --dot: var(--blue);
+  --ring: var(--logoBlue);
+  --dot: var(--logoBlue);
 }
 .logo__word { display: inline-flex; align-items: baseline; gap: 8px; }
 .logo__slo {
@@ -518,8 +519,8 @@ a { color: inherit; text-decoration: none; }
 .logo--ink { color: var(--navy); }
 .logo--ink .mark {
   color: var(--navy);
-  --o1: .22; --o2: .38; --o3: .6; --o4: .85;
-  --dot: var(--navy);
+  --ring: var(--blue);
+  --dot: var(--blue);
 }
 
 .foot__meta { display: flex; flex-wrap: wrap; gap: 6px 28px; font-size: 0.74rem; color: var(--ink-soft); }

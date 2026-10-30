@@ -49,7 +49,8 @@ Tanisha approved all current site copy in October 2026, including the redesign's
 | `index.html` | The entire site: every section, all copy, and the small inline menu script |
 | `styles.css` | All styling. Brand tokens are CSS variables in `:root` at the top |
 | `assets/tanisha.jpg` | Founder portrait used in `#about` (960×1200) |
-| `favicon.svg` | Logomark icon for the browser tab |
+| `assets/slo-logo.svg` | **Master logo** (vector): three organic rings + dot on navy. Use this file whenever the logo is needed elsewhere |
+| `favicon.svg` | The logo for the browser tab (same shapes, heavier lines so it reads at 16px) |
 | `CNAME` | Contains `slobylo.com` — tells GitHub Pages the custom domain. **Do not delete** |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is. **Do not delete** |
 | `README.md` | Short human-facing summary and deploy steps |
@@ -58,7 +59,7 @@ Tanisha approved all current site copy in October 2026, including the redesign's
 ### Page sections (top to bottom, with HTML ids)
 
 1. Navigation (fixed, `#top`): logo left; Services · The evening · About. No CTA button
-2. Hero: dark navy, approved headline and subhead, faint concentric-ring logomark, tagline + email at the foot; text fades in once on load
+2. Hero: dark navy, approved headline and subhead, the logo large and faint in the background, tagline + email at the foot; text fades in once on load
 3. `#services` "What your team cannot build alone." — a five-row ledger: Signature Event · Residency · Programming · Team & Practitioners · Consultancy. No prices
 4. `#how` "Start with one evening." — Discover → Commit → Build
 5. `#evening` A sample evening (dark section): 17:00 Arrival · 17:30 Movement · 18:15 Healing · 19:15 The table
@@ -131,11 +132,17 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 --gold   #C4A87A  accent on dark, sparingly
 --goldD  #8A7A58  accent on light
 --muted  #6A7A8A  secondary text, labels
---blue   #4A6A8A  logomark dot
+--blue   #4A6A8A  logo outer ring + dot on light backgrounds
+--logoBlue #8CA8BF  logo only: outer ring + dot on dark backgrounds
 ```
 - Light sections: navy headings, `rgba(22,32,46,0.6)` body, goldD accents.
 - Dark sections: cream headings, `rgba(237,232,222,0.6)` body, gold accents.
 - Never pure black or pure white. Use only these tokens.
+
+### Logo
+- Three organic, slightly wavy rings around a solid dot (added Oct 2026, replacing the earlier oval rings). The master is `assets/slo-logo.svg`; do not redraw it.
+- In the page it is the `<symbol id="mark">` at the top of `index.html`, used by the nav and footer. Inner two rings take `currentColor` (cream on dark, navy on light); the outer ring and dot use `--ring` / `--dot`, set on `.logo .mark` and `.logo--ink .mark` in `styles.css`.
+- The hero background uses the same shapes at very low opacity.
 
 ### Typography
 - Headings: **Cormorant Garamond, italic, weight 300**. Never bold.
