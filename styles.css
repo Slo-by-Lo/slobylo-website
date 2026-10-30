@@ -109,10 +109,6 @@ a { color: inherit; text-decoration: none; }
   color: rgba(237,232,222,0.72); transition: color .3s ease;
 }
 .nav__links a:hover { color: var(--cream); }
-.nav__links .nav__cta {
-  color: var(--gold); padding-bottom: 3px; border-bottom: 1px solid var(--ruleDk);
-}
-.nav__links .nav__cta:hover { color: var(--cream); border-bottom-color: var(--gold); }
 .nav__toggle {
   display: none; background: none; border: 0; padding: 8px 0; cursor: pointer;
   font: 600 0.62rem/1 var(--sans); letter-spacing: 0.22em; text-transform: uppercase; color: var(--cream);
@@ -265,6 +261,18 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.66rem; letter-spacing: 0.04em; color: var(--muted);
 }
 
+.tiers__note {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 32px; flex-wrap: wrap;
+  margin-top: 40px;
+}
+.tiers__note p { max-width: 56ch; color: var(--navy); opacity: .78; }
+.tiers__cta {
+  font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.45rem; line-height: 1.2;
+  color: var(--navy); padding-bottom: 4px; border-bottom: 1px solid var(--goldD);
+  transition: color .4s ease;
+}
+.tiers__cta:hover { color: var(--goldD); }
+
 /* ---------- Quote ---------- */
 .quote {
   position: relative; background: var(--navyXL); padding: 120px 0; text-align: center; overflow: hidden;
@@ -366,7 +374,6 @@ a { color: inherit; text-decoration: none; }
   }
   .nav__links.is-open { display: flex; }
   .nav__links a { padding: 14px 0; width: 100%; border-bottom: 1px solid var(--ruleDk); font-size: 0.7rem; }
-  .nav__links .nav__cta { border-bottom: 0; margin-top: 8px; }
   .nav.is-open { background: var(--navy); }
 
   .hero__rings { right: -55vw; top: 84%; width: 130vw; opacity: .7; }
