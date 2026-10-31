@@ -10,8 +10,12 @@ Live at https://slobylo.com. Full handover notes for maintainers are in `CLAUDE.
 |------|------------|
 | `index.html` | The whole site — every section, all copy, inline menu script |
 | `styles.css` | All styling. Brand colours are tokens at the top (`:root`) |
-| `assets/tanisha.jpg` | Founder portrait (About section) |
+| `assets/tanisha-lo.jpg` | Founder portrait (About section) |
 | `favicon.svg` | Browser-tab icon (logomark) |
+| `favicon-48x48.png`, `apple-touch-icon.png` | PNG icons for browsers and phones |
+| `assets/og-image.png` | Share image for link previews |
+| `assets/fonts/` | Self-hosted fonts |
+| `robots.txt`, `sitemap.xml` | For search engines (see `CLAUDE.md` §7) |
 | `CNAME` | Tells GitHub Pages to serve the site at slobylo.com |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 | `CLAUDE.md` | Handover notes and brand rules for whoever maintains the site |

@@ -28,7 +28,7 @@ The original design brief is `slo-website-design-brief.md` (kept in the Claude.a
 | Domain | slobylo.com, registered at Namecheap, DNS pointed to GitHub |
 | HTTPS | Done — certificate issued, **Enforce HTTPS** on |
 | Email tanisha@slobylo.com | **Not set up yet.** The site links to it in several places; enquiries will bounce until it exists |
-| Photography | One founder portrait (`assets/tanisha.jpg`) in `#about`. No other imagery yet |
+| Photography | One founder portrait (`assets/tanisha-lo.jpg`) in `#about`. No other imagery yet |
 
 ### Founder approval
 Tanisha approved all current site copy in October 2026, including the redesign's wording: hero, tagline, quote, services, sample evening, About bio and credentials, and the no-prices approach.
@@ -39,7 +39,7 @@ Tanisha approved all current site copy in October 2026, including the redesign's
 
 - Built by Claude (claude.ai, Opus) from the design brief, in one pass, October 2026.
 - Plain HTML + CSS + a few lines of inline vanilla JS (no separate script file). **No framework, no build step, no dependencies.** Keep it that way unless there is a strong reason.
-- Fonts load from Google Fonts. Nothing else is loaded externally.
+- Fonts are self-hosted in `assets/fonts/` (latin-subset variable woff2 files originally from Google Fonts, `font-display: swap`, declared at the top of `styles.css`). Nothing is loaded from external servers.
 - Checked at 1440px desktop and 390px mobile with no horizontal scroll.
 
 ### File map
@@ -48,9 +48,13 @@ Tanisha approved all current site copy in October 2026, including the redesign's
 |------|---------|
 | `index.html` | The entire site: every section, all copy, and the small inline menu script |
 | `styles.css` | All styling. Brand tokens are CSS variables in `:root` at the top |
-| `assets/tanisha.jpg` | Founder portrait used in `#about` (960×1200) |
+| `assets/tanisha-lo.jpg` | Founder portrait used in `#about` (960×1200) |
 | `assets/slo-logo.svg` | **Master logo** (vector): three organic rings + dot on navy. Use this file whenever the logo is needed elsewhere |
 | `favicon.svg` | The logo for the browser tab (same shapes, heavier lines so it reads at 16px) |
+| `favicon-48x48.png`, `apple-touch-icon.png` | PNG versions of `favicon.svg` (48×48 and 180×180). Regenerate both if the favicon changes. `apple-touch-icon.png` is also the `logo` in the JSON-LD |
+| `assets/og-image.png` | Share image for links (1200×630): wordmark + tagline on navy, logo faint on the right |
+| `assets/fonts/` | Self-hosted fonts: Cormorant Garamond italic (300–400), Cormorant Garamond 300, Plus Jakarta Sans (300–600) |
+| `robots.txt`, `sitemap.xml` | Crawler rules and the sitemap — see §7 SEO |
 | `CNAME` | Contains `slobylo.com` — tells GitHub Pages the custom domain. **Do not delete** |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is. **Do not delete** |
 | `README.md` | Short human-facing summary and deploy steps |
@@ -172,7 +176,26 @@ Approved by Tanisha, October 2026.
 
 ---
 
-## 7. Adding photography (future)
+## 7. SEO and metadata
+
+### Name formats
+- In titles, metadata and structured data, write the brand as **Slo by Lo** — no middle dot. ("Slo · by Lo" appears only as an `alternateName` in the JSON-LD.)
+- Write the founder's name exactly as **Tanisha Lo**.
+- **Never mention Regent or IHG** in metadata or structured data.
+
+### What is in place
+- `<title>`, meta description, Open Graph and Twitter tags in the `<head>` of `index.html`. The share image is `https://slobylo.com/assets/og-image.png`; meta image URLs must be absolute.
+- One JSON-LD block in `<head>` with an `@graph`: `WebSite` (`#website`), `ProfessionalService` (`#organization`), `Person` (`#tanisha-lo`), linked by `@id`. The Person has no `sameAs` yet. Add her real LinkedIn/Instagram URLs there when available, and never commit placeholder URLs.
+- `robots.txt` allows everything and points to the sitemap. `sitemap.xml` lists every page.
+
+### Keep in sync
+- `robots.txt`, `sitemap.xml` and the JSON-LD must stay consistent whenever pages are added, renamed or removed.
+- **Every new page needs its own entry in `sitemap.xml`.** Update `<lastmod>` when a page's content changes meaningfully.
+- If the description, logo, photo filename or email changes, update the matching JSON-LD fields too. Check that the JSON still parses before you push.
+
+---
+
+## 8. Adding photography (future)
 
 - Store in `/assets` (where the portrait already is). Export as WebP, ~2000px wide, under ~400 KB each. Always set `alt` text and `width`/`height`.
 - Direction: golden hour, Bali/SEA, water, stone, linen, skin, botanicals; candid and editorial; warm shadows, desaturated highlights, film-like.
@@ -181,11 +204,12 @@ Approved by Tanisha, October 2026.
 
 ---
 
-## 8. Open to-dos
+## 9. Open to-dos
 
 - [x] DNS pointed to GitHub, **Enforce HTTPS** on
 - [ ] Set up the tanisha@slobylo.com mailbox (Namecheap Private Email, Google Workspace or similar) via Namecheap Mail Settings
 - [x] Tanisha approved all site copy (Oct 2026)
 - [ ] Add more photography (portrait done)
-- [ ] Optional: an Open Graph share image (`og:image`) so links preview nicely on WhatsApp/LinkedIn
+- [x] Open Graph share image, structured data, sitemap, favicons (Oct 2026)
+- [ ] Add Tanisha's LinkedIn and Instagram URLs to `sameAs` in the JSON-LD
 - [ ] Invite Tanisha to the Slo-by-Lo GitHub organization
