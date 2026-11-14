@@ -1,6 +1,7 @@
 /* Slo · by Lo — styles
    Palette, type and logomark follow the design brief.
-   No gradients, shadows or rounded corners. Motion: one slow fade on load. */
+   No gradients, shadows or rounded corners; the hero photo fade is the one approved gradient.
+   Motion: one slow fade on load. */
 
 /* Fonts: self-hosted latin subsets (variable files from Google Fonts) */
 @font-face {
@@ -60,7 +61,7 @@ body {
   color: var(--ink);
   font-family: var(--sans);
   font-weight: 300;
-  font-size: 0.92rem;
+  font-size: 0.96rem;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -188,68 +189,94 @@ a { color: inherit; text-decoration: none; }
   .nav__links a { font-size: 1rem; padding: 10px 0; }
 }
 
-/* ───────── Hero ───────── */
+/* ───────── Hero: headline over the photograph, which dissolves into navy ───────── */
 
 .hero {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
   display: grid;
-  grid-template-rows: 1fr auto;
-  padding: 0 var(--gutter);
   background: var(--navy);
   color: var(--cream);
   overflow: hidden;
 }
 
-.hero__mark {
+.hero__photo {
   position: absolute;
-  top: 50%;
-  right: calc(-1 * min(24vw, 300px));
-  width: min(120vh, 110vw);
-  height: auto;
-  transform: translateY(-50%);
-  pointer-events: none;
+  inset: 0 0 0 auto;
+  width: 68%;
+  margin: 0;
+}
+.hero__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 76%;
+}
+/* the transparency: navy at the left edge thinning to a light veil, plus a darker foot for the small print */
+.hero__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, rgba(15, 24, 32, 0.72) 0%, rgba(15, 24, 32, 0) 26%),
+    linear-gradient(90deg, #16202E 0%, rgba(22, 32, 46, 0.86) 18%, rgba(22, 32, 46, 0.4) 46%, rgba(22, 32, 46, 0.12) 100%);
+}
+
+.hero__text {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding-left: max(var(--gutter), calc((100vw - 1200px) / 2));
+  padding-right: max(var(--gutter), calc((100vw - 1200px) / 2));
 }
 
 .hero__body {
-  position: relative;
-  z-index: 1;
   align-self: end;
-  width: 100%;
   padding: calc(var(--nav-h) + 72px) 0 clamp(48px, 8vh, 88px);
 }
 
 .hero__title {
-  max-width: 13em;
-  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  max-width: 10.5em;
+  font-size: clamp(2.6rem, 4.8vw, 4.4rem);
   line-height: 1.06;
   color: var(--cream);
 }
 
 .hero__sub {
-  max-width: 38em;
+  max-width: 36em;
   margin-top: 28px;
   font-size: 0.95rem;
-  color: var(--pale);
+  color: rgba(237, 232, 222, 0.86);
 }
 
 .hero__foot {
-  position: relative;
-  z-index: 1;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 8px 24px;
   padding: 20px 0 calc(20px + env(safe-area-inset-bottom, 0px));
-  border-top: 1px solid var(--ruleDk);
+  border-top: 1px solid rgba(237, 232, 222, 0.22);
   font-size: 0.74rem;
-  color: var(--pale-soft);
+  color: rgba(237, 232, 222, 0.8);
 }
-.hero__foot a { color: var(--pale); border-bottom: 1px solid transparent; }
-.hero__foot a:hover { color: var(--cream); border-bottom-color: var(--gold); }
+.hero__foot a { color: var(--cream); border-bottom: 1px solid transparent; }
+.hero__foot a:hover { border-bottom-color: var(--gold); }
 .hero :focus-visible { outline-color: var(--gold); }
+
+@media (max-width: 860px) {
+  .hero { display: block; min-height: 0; }
+  .hero__photo { position: relative; inset: auto; width: 100%; margin-top: var(--nav-h); }
+  .hero__photo img { height: auto; aspect-ratio: 4 / 5; }
+  .hero__photo::after {
+    background: linear-gradient(180deg, rgba(22, 32, 46, 0.1) 0%, rgba(22, 32, 46, 0.16) 52%, rgba(22, 32, 46, 0.78) 82%, #16202E 100%);
+  }
+  .hero__text { display: block; margin-top: -96px; padding-left: var(--gutter); padding-right: var(--gutter); }
+  .hero__body { padding: 0 0 40px; }
+}
 
 @keyframes settle { from { opacity: 0; } to { opacity: 1; } }
 
@@ -296,7 +323,7 @@ a { color: inherit; text-decoration: none; }
 
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
   gap: clamp(20px, 4vw, 56px);
   padding: clamp(28px, 3.5vw, 40px) 0;
   border-bottom: 1px solid var(--rule);
@@ -306,6 +333,20 @@ a { color: inherit; text-decoration: none; }
 
 .lead { max-width: 52ch; color: var(--navy); font-size: 1rem; line-height: 1.7; }
 .small { max-width: 52ch; margin-top: 12px; font-size: 0.84rem; color: var(--ink-soft); }
+
+/* description in the middle, what is included on the right */
+.row__body {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
+  gap: clamp(20px, 4vw, 56px);
+  align-items: start;
+}
+.row__body .small { margin-top: 4px; }
+
+@media (max-width: 960px) {
+  .row__body { grid-template-columns: 1fr; gap: 12px; }
+  .row__body .small { margin-top: 0; }
+}
 
 @media (max-width: 760px) {
   .row { grid-template-columns: 1fr; gap: 14px; }
@@ -361,69 +402,73 @@ a { color: inherit; text-decoration: none; }
   .steps li:not(:last-child)::after { content: none; }
 }
 
-/* ───────── The evening (sample run of show, kept compact) ───────── */
+/* ───────── The evening (sample run of show, one photograph per moment) ───────── */
 
 .run {
-  margin-top: clamp(28px, 4vw, 44px);
+  margin-top: clamp(32px, 5vw, 56px);
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(20px, 3vw, 40px);
+  gap: clamp(16px, 2.4vw, 32px);
 }
 
-.run li {
-  padding-top: 16px;
-  border-top: 1px solid var(--ruleDk);
-}
+.run li { min-width: 0; }
+
+.run__photo { margin: 0 0 18px; background: var(--navyXL); }
+.run__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 
 .run time {
   display: block;
   font-family: var(--serif);
   font-style: italic;
   font-weight: 300;
-  font-size: clamp(2rem, 3.4vw, 2.6rem);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
   line-height: 1;
   font-variant-numeric: lining-nums;
   color: var(--cream);
 }
 
-.run h3 { margin-top: 12px; font-size: 1.3rem; }
+.run h3 { margin-top: 10px; font-size: 1.3rem; }
 .run p { max-width: 30ch; margin-top: 6px; font-size: 0.84rem; line-height: 1.65; color: var(--pale); }
 
 .run__note { margin-top: 28px; font-size: 0.78rem; color: var(--gold); }
 
 @media (max-width: 900px) {
-  .run { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; }
+  .run { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 36px; }
 }
 
-@media (max-width: 520px) {
-  .run { grid-template-columns: 1fr; row-gap: 20px; }
-  .run p { max-width: none; }
-}
+/* ───────── Why Slo: one photograph, three reasons ───────── */
 
-/* ───────── Why Slo ───────── */
-
-.pillars {
+.why {
   margin-top: clamp(40px, 6vw, 72px);
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: clamp(36px, 6vw, 64px);
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
 }
 
-.pillar h3 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
-.pillar p { max-width: 46ch; margin-top: 14px; color: var(--ink); }
+.why__photo { margin: 0; background: var(--creamD); }
+.why__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 
-@media (min-width: 761px) {
-  .pillars { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(16px, 2vw, 32px); }
-  .pillar:nth-child(1) { grid-column: 1 / span 6; }
-  .pillar:nth-child(2) { grid-column: 4 / span 6; }
-  .pillar:nth-child(3) { grid-column: 7 / span 6; }
+.pillar { padding: clamp(24px, 3vw, 36px) 0; border-top: 1px solid var(--rule); }
+.pillar:last-child { border-bottom: 1px solid var(--rule); }
+.pillar h3 { font-size: clamp(1.6rem, 2.6vw, 2rem); }
+.pillar p { max-width: 50ch; margin-top: 12px; color: var(--ink); }
+
+@media (max-width: 760px) {
+  .why { grid-template-columns: 1fr; }
+  .why__photo { max-width: 420px; }
 }
+
+/* ───────── Texture band ───────── */
+
+.band { margin: 0; background: var(--navyXL); }
+.band img { display: block; width: 100%; height: clamp(150px, 22vw, 300px); object-fit: cover; }
 
 /* ───────── Quote ───────── */
 
 .quote { padding-top: clamp(88px, 12vw, 160px); padding-bottom: clamp(88px, 12vw, 160px); }
 
-.quote blockquote { margin: 0 auto; max-width: 22em; text-align: center; }
+.quote blockquote { margin: 0; text-align: center; }
 
 .quote blockquote p {
   font-family: var(--serif);
@@ -432,6 +477,9 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(1.8rem, 4.2vw, 3rem);
   line-height: 1.25;
   color: var(--cream);
+  max-width: 21em;
+  margin: 0 auto;
+  text-wrap: balance;
 }
 
 .quote cite {
@@ -451,7 +499,8 @@ a { color: inherit; text-decoration: none; }
   align-items: start;
 }
 
-.portrait { margin: 0 0 28px; background: var(--creamD); }
+.portrait { margin: 0; background: var(--creamD); }
+.about__head { margin-bottom: clamp(28px, 4vw, 44px); }
 .portrait img {
   display: block;
   width: 100%;
@@ -511,6 +560,20 @@ a { color: inherit; text-decoration: none; }
 
 /* ───────── Contact ───────── */
 
+.contact__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: end;
+}
+.contact__photo { margin: 0; background: var(--creamD); }
+.contact__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+
+@media (max-width: 760px) {
+  .contact__grid { grid-template-columns: 1fr; }
+  .contact__photo { max-width: 420px; }
+}
+
 .contact__text { max-width: 44ch; margin-top: 22px; font-size: 1rem; color: var(--ink); }
 
 .contact__mail {
@@ -521,7 +584,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--serif);
   font-style: italic;
   font-weight: 300;
-  font-size: clamp(1.8rem, 5.4vw, 3.8rem);
+  font-size: clamp(1.8rem, 4.6vw, 3.4rem);
   line-height: 1.1;
   color: var(--navy);
   overflow-wrap: anywhere;
