@@ -35,7 +35,7 @@ The original design brief is `slo-website-design-brief.md` (kept in the Claude.a
 | Photography | Founder portrait (`assets/tanisha-lo.jpg`) in `#about`, plus eight photos in `assets/photos/` (hero, the problem, sample evening ×4, Built from the inside, contact) — see §8 |
 
 ### Founder approval
-The current copy, structure and photography are the approved "Preview C" design (November 2026). It replaced the October 2026 copy (old hero, tagline, closing quote and the five-service ledger), which is retired.
+The current copy, structure and photography are the approved "Preview C" design (November 2026). Copy edits, the navy Approach section and a new founder portrait followed on 16 November 2026. It replaced the October 2026 copy (old hero, tagline, closing quote and the five-service ledger), which is retired.
 
 ---
 
@@ -70,7 +70,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 1. Navigation (fixed, `#top`): logo left; Approach · The evening · Ways to work · About · Contact us
 2. Hero: `hero-beach-yoga.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your business" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
 3. `#idea` The problem — "Most wellness looks the same everywhere." — followed by a full-width photo (`idea-terrace.jpg`)
-4. `#approach` Approach — "How we find it.": Listen → Define → Design → Run, then "What you keep"
+4. `#approach` Approach (dark, `sec--navy`) — "How we find it.": Listen → Define → Design → Run, then "What you keep"
 5. `#range` Examples — "One method, a different answer each time.": a hotel · a restaurant · a development · a lifestyle brand. **Illustrative, not client work**
 6. `#evening` A sample evening (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
 7. `#ways` Ways to work — "Three ways to work with Slo.": The Identity · The Offering · The Partnership, then "Formats we design" and a second "Tell us about your business" button. No prices
@@ -178,7 +178,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 ### Approved copy — do not change without the founder's sign-off
 All wording on the page is the approved "Preview C" copy (November 2026). Do not reword it, and keep the contact button's mailto link (subject and body) exactly as written. Anchor lines:
 - Hero: "Every brand has a wellness identity. We find it."
-- Subhead: "Slo defines what wellness means for your hotel, restaurant or brand, and builds the offering that keeps your guests coming back. Bali and Singapore."
+- Subhead: "Slo defines what wellness means for your brand, then builds it: the evenings, the programmes, the people."
 - Services: The Identity, The Offering, The Partnership.
 
 The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the closing quote block, the five-service ledger) are retired from the page. The tagline still appears on `assets/og-image.png` and in its `og:image:alt`; update both together if the share image is redrawn.
