@@ -72,7 +72,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 3. `#idea` The problem — "Most wellness looks the same everywhere." — followed by a full-width photo (`idea-terrace.jpg`)
 4. `#approach` Approach (dark, `sec--navy`) — "How we find it.": Listen → Define → Design → Run, then "What you keep"
 5. `#range` Examples — "One method, a different answer each time.": Hotel · Restaurant · Fashion house · Lifestyle brand. **Illustrative, not client work**
-6. `#evening` "One evening, imagined." (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
+6. `#evening` "One evening, imagined" (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
 7. `#ways` Ways to work — "Three ways to work with Slo.": The Identity · The Offering · The Partnership, then "Formats we design" and a second "Tell us about your business" button. No prices
 8. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
 9. `#about` About (dark): pull quote, founder portrait, name and title, bio, "What I bring", LinkedIn link
@@ -158,7 +158,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 ### Typography
 - Headings: **Cormorant Garamond, italic, weight 300**. Never bold.
 - Body: **Plus Jakarta Sans, weight 300, 17px** (`1.0625rem`), line-height 1.75.
-- **Nothing below 14px.** Small labels (`.label`, e.g. "Examples", "One evening, imagined.", "What you keep") are 0.9rem (14.4px), weight 600, sentence case. As shipped, three bits of interface text sit under that: "BY LO" in the logo wordmark, the skip link and the mobile "Menu" label. Do not add any more.
+- **Nothing below 14px.** Small labels (`.label`, e.g. "Examples", "One evening, imagined", "What you keep") are 0.9rem (14.4px), weight 600, sentence case. As shipped, three bits of interface text sit under that: "BY LO" in the logo wordmark, the skip link and the mobile "Menu" label. Do not add any more.
 
 ### Layout
 - Max width 1200px. Horizontal padding `clamp(24px, 6vw, 72px)`, 16px on mobile.
