@@ -71,7 +71,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 2. Hero: `hero-beach-yoga.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your business" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
 3. `#idea` The problem — "Most wellness looks the same everywhere." — followed by a full-width photo (`idea-terrace.jpg`)
 4. `#approach` Approach (dark, `sec--navy`) — "How we find it.": Listen → Define → Design → Run, then "What you keep"
-5. `#range` Examples — "One method, a different answer each time.": a hotel · a restaurant · a development · a lifestyle brand. **Illustrative, not client work**
+5. `#range` Examples — "One method, a different answer each time.": a hotel · a restaurant · a fashion house · a lifestyle brand. **Illustrative, not client work**
 6. `#evening` A sample evening (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
 7. `#ways` Ways to work — "Three ways to work with Slo.": The Identity · The Offering · The Partnership, then "Formats we design" and a second "Tell us about your business" button. No prices
 8. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
