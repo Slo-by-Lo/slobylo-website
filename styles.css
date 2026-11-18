@@ -316,7 +316,6 @@ a { color: inherit; text-decoration: none; }
 .run__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: var(--pos, 50% 50%); }
 .run h3 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); }
 .run p { max-width: 38ch; margin-top: 12px; font-size: 1.05rem; line-height: 1.65; color: var(--pale); }
-.run__note { margin-top: 28px; font-size: 0.9rem; color: var(--pale-soft); }
 
 @media (max-width: 860px) {
   .run li { grid-template-columns: 1fr; gap: 16px; align-items: start; }
