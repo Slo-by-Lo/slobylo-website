@@ -68,15 +68,15 @@ The current copy, structure and photography are the approved "Preview C" design 
 ### Page sections (top to bottom, with HTML ids)
 
 1. Navigation (fixed, `#top`): logo left; Approach · The evening · Ways to work · About · Contact us
-2. Hero: `hero-beach-yoga.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your business" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
+2. Hero: `hero-beach-yoga.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your brand" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
 3. `#idea` The problem — "Most wellness looks the same everywhere." — followed by a full-width photo (`idea-terrace.jpg`)
 4. `#approach` Approach (dark, `sec--navy`) — "How we find it.": Listen → Define → Design → Run, then "What you keep"
 5. `#range` Examples — "One method, a different answer each time.": Hotel · Restaurant · Fashion house · Lifestyle brand. **Illustrative, not client work**
 6. `#evening` "One evening, imagined" (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
-7. `#ways` Ways to work — "Three ways to work with Slo.": The Identity · The Offering · The Partnership, then "Formats we design" and a second "Tell us about your business" button. No prices
+7. `#ways` Ways to work — "Three ways to work with Slo.": The Identity · The Offering · The Partnership, then "Formats we design" and a second "Tell us about your brand" button. No prices
 8. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
 9. `#about` About (dark): pull quote, founder portrait, name and title, bio, "What I bring", LinkedIn link
-10. `#contact` Contact — "Tell us about your business.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
+10. `#contact` Contact — "Tell us about your brand.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
 11. Footer: logo, email, LinkedIn, ©
 
 ---
