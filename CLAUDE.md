@@ -53,7 +53,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 | `index.html` | The entire site: every section, all copy, and the small inline menu script |
 | `styles.css` | All styling. Brand tokens are CSS variables in `:root` at the top |
 | `assets/tanisha-lo.jpg` | Founder portrait used in `#about` (960×1200) |
-| `assets/photos/` | Site photography (JPEG, web-ready): `hero-beach-yoga`, `idea-terrace`, `evening-ceramic-wall`, `evening-sessions`, `evening-table`, `evening-close`, `built-linen`, `contact-table`. Rules in §8 |
+| `assets/photos/` | Site photography (JPEG, web-ready): `hero-beach-yoga`, `idea-terrace`, `evening-ceramic-wall`, `evening-sessions`, `evening-table`, `evening-beach-doorway`, `built-linen`, `contact-table`. Rules in §8 |
 | `assets/slo-logo.svg` | **Master logo** (vector): three organic rings + dot on navy. Use this file whenever the logo is needed elsewhere |
 | `favicon.svg` | The logo for the browser tab (same shapes, heavier lines so it reads at 16px) |
 | `favicon-48x48.png`, `apple-touch-icon.png` | PNG versions of `favicon.svg` (48×48 and 180×180). Regenerate both if the favicon changes. `apple-touch-icon.png` is also the `logo` in the JSON-LD |
