@@ -31,7 +31,7 @@ The original design brief is `slo-website-design-brief.md` (kept in the Claude.a
 | Hosting | GitHub Pages, deploying from `main` / root |
 | Domain | slobylo.com, registered at Namecheap, DNS pointed to GitHub |
 | HTTPS | Done — certificate issued, **Enforce HTTPS** on |
-| Email tanisha@slobylo.com | **Not set up yet.** The site links to it in several places; enquiries will bounce until it exists |
+| Email tanisha@slobylo.com | Done — mailbox live (Nov 2026) |
 | Photography | Founder portrait (`assets/tanisha-lo.jpg`) in `#about`, plus eight photos in `assets/photos/` (hero, the problem, sample evening ×4, Built from the inside, contact) — see §8 |
 
 ### Founder approval
@@ -219,7 +219,7 @@ The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the clo
 ## 9. Open to-dos
 
 - [x] DNS pointed to GitHub, **Enforce HTTPS** on
-- [ ] Set up the tanisha@slobylo.com mailbox (Namecheap Private Email, Google Workspace or similar) via Namecheap Mail Settings
+- [x] Set up the tanisha@slobylo.com mailbox (Nov 2026)
 - [x] Tanisha approved all site copy (Oct 2026)
 - [x] Photography and repositioning to the approved "Preview C" design (Nov 2026)
 - [ ] Share image (`assets/og-image.png`) and `README.md` still carry the old tagline and section list — refresh when convenient
