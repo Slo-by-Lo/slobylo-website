@@ -178,7 +178,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 ### Approved copy — do not change without the founder's sign-off
 All wording on the page is the approved "Preview C" copy (November 2026). Do not reword it, and keep the contact button's mailto link (subject and body) exactly as written. Anchor lines:
 - Hero: "Every brand has a wellness identity. We find it."
-- Subhead: "Slo defines what wellness means for your brand, then builds it: the evenings, the rituals, the people."
+- Subhead: "Slo defines what wellness means for your brand... then builds it: the evenings, the rituals, the people."
 - Services: The Identity, The Offering, The Partnership.
 
 The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the closing quote block, the five-service ledger) are retired from the page. The tagline still appears on `assets/og-image.png` and in its `og:image:alt`; update both together if the share image is redrawn.
