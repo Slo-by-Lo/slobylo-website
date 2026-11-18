@@ -170,7 +170,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 
 ### Copy
 - Short sentences. Headings are claims or provocations, never labels ("Most wellness looks the same everywhere." not "The problem").
-- **Never use:** holistic, journey, transformative, wellness ritual, self-care, sacred, heal your body, empowering. (One approved exception: "a sound journey" in the sample evening, which names the session.)
+- **Never use:** holistic, journey, transformative, wellness ritual, self-care, sacred, heal your body, empowering.
 - Prefer: curated, authored, intentional, considered, distinct, precisely, quietly.
 - "Slo" in third person for the brand. "I" only in Tanisha's bio.
 - **No prices on the site** (decision, Oct 2026 — overrides the original brief). The three ways to work are described without fees; visitors email and Slo replies. Internal reference prices are in the founder's brief — do not publish them.
