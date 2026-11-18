@@ -73,7 +73,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 4. `#approach` Approach (dark, `sec--navy`) — "How we find it.": Listen → Define → Design → Run, then "What you keep"
 5. `#range` Examples — "One method, a different answer each time.": Hotel · Restaurant · Fashion house · Lifestyle brand. **Illustrative, not client work**
 6. `#evening` "One evening, imagined" (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
-7. `#ways` Ways to work — "Three ways to work with Slo.": The Signature Experience · The Build · The Partnership, then "Formats we design" and a second "Tell us about your brand" button. No prices
+7. `#ways` Ways to work — "Three ways to work with Slo.": The Signature Experience · The Build · The Partnership, then a second "Tell us about your brand" button. No prices
 8. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
 9. `#about` About (dark): pull quote, founder portrait, name and title, bio, "What I bring", LinkedIn link
 10. `#contact` Contact — "Tell us about your brand.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
