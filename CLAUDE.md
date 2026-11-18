@@ -9,7 +9,7 @@ It explains what this site is, how it was built, how it is hosted, and the rules
 
 **slobylo.com** is the marketing website for **Slo · by Lo**, a luxury wellness consultancy founded by **Tanisha Lo**.
 
-**Positioning (Nov 2026):** Slo finds the wellness identity of a hotel, restaurant, development or lifestyle brand and builds the offering that keeps guests coming back. Events are one format, not the product.
+**Positioning (Nov 2026):** Slo finds the wellness identity of a hotel, restaurant, fashion house or lifestyle brand and builds the offering that keeps guests coming back. Events are one format, not the product.
 
 - Services: **The Identity**, **The Offering** and **The Partnership**. No prices shown.
 - The evening section is a sample and the Examples section is illustrative. **Never present either as past client work.**
