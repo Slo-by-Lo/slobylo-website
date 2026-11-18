@@ -11,7 +11,7 @@ It explains what this site is, how it was built, how it is hosted, and the rules
 
 **Positioning (Nov 2026):** Slo finds the wellness identity of a hotel, restaurant, fashion house or lifestyle brand and builds the offering that keeps guests coming back. Events are one format, not the product.
 
-- Services: **The Identity**, **The Offering** and **The Partnership**. No prices shown.
+- Services: **The Signature Experience**, **The Build** and **The Partnership**. No prices shown.
 - The evening section is a sample and the Examples section is illustrative. **Never present either as past client work.**
 
 - Audience: hotel GMs, F&B and lifestyle directors, developers, brand marketing leads
@@ -73,7 +73,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 4. `#approach` Approach (dark, `sec--navy`) — "How we find it.": Listen → Define → Design → Run, then "What you keep"
 5. `#range` Examples — "One method, a different answer each time.": Hotel · Restaurant · Fashion house · Lifestyle brand. **Illustrative, not client work**
 6. `#evening` "One evening, imagined" (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
-7. `#ways` Ways to work — "Three ways to work with Slo.": The Identity · The Offering · The Partnership, then "Formats we design" and a second "Tell us about your brand" button. No prices
+7. `#ways` Ways to work — "Three ways to work with Slo.": The Signature Experience · The Build · The Partnership, then "Formats we design" and a second "Tell us about your brand" button. No prices
 8. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
 9. `#about` About (dark): pull quote, founder portrait, name and title, bio, "What I bring", LinkedIn link
 10. `#contact` Contact — "Tell us about your brand.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
@@ -179,7 +179,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 All wording on the page is the approved "Preview C" copy (November 2026). Do not reword it, and keep the contact button's mailto link (subject and body) exactly as written. Anchor lines:
 - Hero: "Every brand has a wellness identity. We find it."
 - Subhead: "Slo defines what wellness means for your brand, then builds it: the evenings, the rituals, the people."
-- Services: The Identity, The Offering, The Partnership.
+- Services: The Signature Experience (Find it), The Build (Make it), The Partnership (Keep it alive).
 
 The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the closing quote block, the five-service ledger) are retired from the page. The tagline still appears on `assets/og-image.png` and in its `og:image:alt`; update both together if the share image is redrawn.
 
