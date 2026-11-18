@@ -16,7 +16,7 @@ It explains what this site is, how it was built, how it is hosted, and the rules
 
 - Audience: hotel GMs, F&B and lifestyle directors, developers, brand marketing leads
 - Tone: editorial, minimal, confident — closer to a fashion house than a spa (think Aesop, Bottega Veneta, Kinfolk)
-- Contact: tanisha@slobylo.com · Bali + Singapore
+- Contact: tanisha@slobylo.com. Do not list a location (Bali, Singapore) anywhere on the page or in metadata (decision, Nov 2026)
 
 The original design brief is `slo-website-design-brief.md` (kept in the Claude.ai project "Webdesigner"; ask the owner for it if it is not in this repo). The site has since been repositioned (Nov 2026, "Preview C"); where the brief and this file disagree, this file wins.
 
@@ -77,7 +77,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 8. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
 9. `#about` About (dark): pull quote, founder portrait, name and title, bio, "What I bring", LinkedIn link
 10. `#contact` Contact — "Tell us about your business.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
-11. Footer: logo, email, location, LinkedIn, ©
+11. Footer: logo, email, LinkedIn, ©
 
 ---
 

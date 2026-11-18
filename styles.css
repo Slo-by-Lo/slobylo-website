@@ -446,7 +446,6 @@ a { color: inherit; text-decoration: none; }
 .prompts li { padding: 14px 0; border-bottom: 1px solid var(--rule); font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(1.4rem, 2.2vw, 1.75rem); line-height: 1.2; color: var(--navy); }
 .contact__text { margin-top: 24px; font-size: 1.15rem; color: var(--ink); }
 .contact .btn { margin-top: 28px; overflow-wrap: anywhere; }
-.contact .note { margin-top: 18px; }
 
 @media (max-width: 760px) {
   .contact__grid { grid-template-columns: 1fr; }
