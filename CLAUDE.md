@@ -16,7 +16,7 @@ It explains what this site is, how it was built, how it is hosted, and the rules
 
 - Audience: hotel GMs, F&B and lifestyle directors, developers, brand marketing leads
 - Tone: editorial, minimal, confident — closer to a fashion house than a spa (think Aesop, Bottega Veneta, Kinfolk)
-- Contact: tanisha@slobylo.com. Based in Bali + Singapore, but do not show the location in the visible page copy (decision, Nov 2026). It stays in the title, meta description and JSON-LD
+- Contact: tanisha@slobylo.com. Based in Bali + Singapore, but do not show the location in the visible page copy (decision, Nov 2026). It stays in the meta description and JSON-LD
 
 The original design brief is `slo-website-design-brief.md` (kept in the Claude.ai project "Webdesigner"; ask the owner for it if it is not in this repo). The site has since been repositioned (Nov 2026, "Preview C"); where the brief and this file disagree, this file wins.
 
