@@ -7,7 +7,7 @@ It explains what this site is, how it was built, how it is hosted, and the rules
 
 ## 1. What this is
 
-**slobylo.com** is the marketing website for **Slo · by Lo**, a luxury wellness consultancy founded by **Tanisha Lo**.
+**slobylo.com** is the marketing website for **Slo**, a luxury wellness consultancy founded by **Tanisha Lo**.
 
 **Positioning (Nov 2026):** Slo finds the wellness identity of a hotel, restaurant, fashion house or lifestyle brand and builds the offering that keeps guests coming back. Events are one format, not the product.
 
@@ -189,7 +189,7 @@ The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the clo
 ## 7. SEO and metadata
 
 ### Name formats
-- In titles, metadata and structured data, write the brand as **Slo by Lo** — no middle dot. ("Slo · by Lo" appears only as an `alternateName` in the JSON-LD.)
+- The brand is **Slo** everywhere: titles, metadata, structured data, screen-reader labels and visible copy (decision, Nov 2026). "Slo by Lo" survives only in the domain (slobylo.com, and `slobylo` as the JSON-LD `alternateName`). Do not reintroduce "Slo by Lo" or "Slo · by Lo".
 - Write the founder's name exactly as **Tanisha Lo**.
 - **Never mention Regent or IHG** in metadata or structured data.
 

@@ -1,6 +1,6 @@
 # slobylo.com
 
-Static website for **Slo · by Lo** — Tanisha Lo's luxury wellness consultancy.
+Static website for **Slo** — Tanisha Lo's luxury wellness consultancy.
 Plain HTML/CSS with a few lines of inline JS. No build step, no framework, no dependencies.
 Live at https://slobylo.com. Full handover notes for maintainers are in `CLAUDE.md`.
 
