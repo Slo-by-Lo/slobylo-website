@@ -159,7 +159,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 ### Typography
 - Headings: **Cormorant Garamond, italic, weight 300**. Never bold.
 - Body: **Plus Jakarta Sans, weight 300, 17px** (`1.0625rem`), line-height 1.75.
-- **Nothing below 14px.** Small labels (`.label`, e.g. "One evening, imagined", "What you keep") are 0.9rem (14.4px), weight 600, sentence case. As shipped, three bits of interface text sit under that: "BY LO" in the logo wordmark, the skip link and the mobile "Menu" label. Do not add any more.
+- **Nothing below 14px.** Small labels (`.label`, e.g. "One evening, imagined", "What you keep") are 0.9rem (14.4px), weight 600, sentence case. As shipped, two bits of interface text sit under that: the skip link and the mobile "Menu" label. (The "BY LO" in the logo wordmark was removed in Nov 2026; the wordmark is now just "slo".) Do not add any more.
 
 ### Layout
 - Max width 1200px. Horizontal padding `clamp(24px, 6vw, 72px)`, 16px on mobile.

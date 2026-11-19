@@ -144,12 +144,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.7rem;
   line-height: 1;
 }
-.logo__by {
-  font-size: 0.55rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
 
 .nav__links { display: flex; align-items: center; gap: clamp(20px, 3vw, 40px); }
 .nav__links a {
