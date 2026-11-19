@@ -74,7 +74,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 5. `#evening` "One evening, imagined" (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
 6. `#ways` Ways to work — "Three ways to work with Slo.": The Signature Experience · The Build · The Partnership, then "What you keep" and a second "Tell us about your brand" button. No prices
 7. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
-8. `#about` About (dark): pull quote, founder portrait, name and title, bio, "What I bring", LinkedIn link
+8. `#about` About (dark): pull quote, founder portrait, name and title, bio, credentials line (Monash, executive coach), LinkedIn link
 9. `#contact` Contact — "Tell us about your brand.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
 10. Footer: logo, email, LinkedIn, ©
 
@@ -161,7 +161,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 
 ### Layout
 - Max width 1200px. Horizontal padding `clamp(24px, 6vw, 72px)`, 16px on mobile.
-- **No rounded corners** (except small circular dots, e.g. the credential bullets). **No shadows.** **No gradients**, with one approved exception: the hero fade (`.hero__photo::after` and `.hero::after`, which keep the headline readable over the photo). Do not add any other gradient.
+- **No rounded corners.** **No shadows.** **No gradients**, with one approved exception: the hero fade (`.hero__photo::after` and `.hero::after`, which keep the headline readable over the photo). Do not add any other gradient.
 - **Buttons are solid with square corners** (`.btn--light` on dark, `.btn--dark` on light). No outline or pill buttons.
 - Dividers: 1px, subtle. Card grids use 1px gaps over a coloured parent to create hairline dividers.
 - Motion: one slow opacity fade on the hero text at load. Nothing else animates. Respect `prefers-reduced-motion`.
