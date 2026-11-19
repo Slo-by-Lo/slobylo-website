@@ -3,7 +3,7 @@
    digits only (no +, spaces or dashes), e.g. Singapore 6591234567.
    While WA_NUMBER is empty the button is not shown at all. */
 var WA_NUMBER = '6287797061371';
-var WA_MESSAGE = "Hi Slo, I'd like to talk about an experience for my brand.";
+var WA_MESSAGE = "Hi Slo, I’d like to talk about a wellness experience for my brand.";
 
 (function () {
   var number = String(WA_NUMBER).replace(/\D/g, '');
