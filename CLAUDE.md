@@ -59,6 +59,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 | `favicon-48x48.png`, `apple-touch-icon.png` | PNG versions of `favicon.svg` (48×48 and 180×180). Regenerate both if the favicon changes. `apple-touch-icon.png` is also the `logo` in the JSON-LD |
 | `assets/og-image.png` | Share image for links (1200×630): wordmark + tagline on navy, logo faint on the right |
 | `assets/fonts/` | Self-hosted fonts: Cormorant Garamond italic (300–400), Cormorant Garamond 300, Plus Jakarta Sans (300–600) |
+| `assets/whatsapp.js` | Floating WhatsApp button (markup, styles, behaviour). Number and message are variables at the top; the button stays hidden while `WA_NUMBER` is empty. Its circle and soft shadow are an approved exception to §6 (Nov 2026) |
 | `robots.txt`, `sitemap.xml` | Crawler rules and the sitemap — see §7 SEO |
 | `CNAME` | Contains `slobylo.com` — tells GitHub Pages the custom domain. **Do not delete** |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is. **Do not delete** |
@@ -77,6 +78,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 8. `#about` About (dark): pull quote, founder portrait, name and title, bio, credentials line (Monash, executive coach), LinkedIn link
 9. `#contact` Contact — "Tell us about your brand.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
 10. Footer: logo, email, LinkedIn, ©
+11. Floating WhatsApp button (`assets/whatsapp.js`), bottom right. Appears after the hero or 3 seconds, and hides while the contact section or footer is on screen
 
 ---
 
