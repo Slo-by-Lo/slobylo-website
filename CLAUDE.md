@@ -67,7 +67,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 
 ### Page sections (top to bottom, with HTML ids)
 
-1. Navigation (fixed, `#top`): logo left; The evening · Ways to work · About · Contact us
+1. Navigation (fixed, `#top`): logo left; Experiences · Ways to work · About · Contact us
 2. Hero: `hero-beach-yoga.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your brand" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
 3. `#idea` The problem — "Most wellness looks the same everywhere." — followed by a full-width photo (`idea-terrace.jpg`)
 4. `#range` Examples (no label) — "One method, a different answer each time.": Hotel · Restaurant · Fashion house · Lifestyle brand. **Illustrative, not client work**
