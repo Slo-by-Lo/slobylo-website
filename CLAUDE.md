@@ -57,7 +57,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 | `assets/slo-logo.svg` | **Master logo** (vector): three organic rings + dot on navy. Use this file whenever the logo is needed elsewhere |
 | `favicon.svg` | The logo for the browser tab (same shapes, heavier lines so it reads at 16px) |
 | `favicon-48x48.png`, `apple-touch-icon.png` | PNG versions of `favicon.svg` (48×48 and 180×180). Regenerate both if the favicon changes. `apple-touch-icon.png` is also the `logo` in the JSON-LD |
-| `assets/og-image.png` | Share image for links (1200×630): wordmark + tagline on navy, logo faint on the right |
+| `assets/og-image.png` | Share image for links (1200×630): "slo" wordmark + the hero line ("Every brand has a wellness identity. We find it.") on navy, logo rings faint on the right. Redrawn Nov 2026; if it changes, update `og:image:alt` too |
 | `assets/fonts/` | Self-hosted fonts: Cormorant Garamond italic (300–400), Cormorant Garamond 300, Plus Jakarta Sans (300–600) |
 | `assets/whatsapp.js` | Floating WhatsApp button (markup, styles, behaviour). Number and message are variables at the top. Its circle and soft shadow are an approved exception to §6 (Nov 2026) |
 | `robots.txt`, `sitemap.xml` | Crawler rules and the sitemap — see §7 SEO |
@@ -182,7 +182,7 @@ All wording on the page is the approved "Preview C" copy (November 2026). Do not
 - Subhead: "Slo defines what wellness means for your brand, then builds it: the evenings, the rituals, the people."
 - Services: The Signature Experience (Find it), The Build (Make it), The Partnership (Keep it alive).
 
-The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the closing quote block, the five-service ledger) are retired from the page. The tagline still appears on `assets/og-image.png` and in its `og:image:alt`; update both together if the share image is redrawn.
+The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the closing quote block, the five-service ledger) are retired from the page.
 
 ---
 
@@ -223,7 +223,8 @@ The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the clo
 - [x] Set up the tanisha@slobylo.com mailbox (Nov 2026)
 - [x] Tanisha approved all site copy (Oct 2026)
 - [x] Photography and repositioning to the approved "Preview C" design (Nov 2026)
-- [ ] Share image (`assets/og-image.png`) and `README.md` still carry the old tagline and section list — refresh when convenient
+- [x] Share image (`assets/og-image.png`) redrawn with the "slo" wordmark and hero line (Nov 2026)
+- [ ] `README.md` still carries the old section list — refresh when convenient
 - [x] Open Graph share image, structured data, sitemap, favicons (Oct 2026)
 - [ ] Add Tanisha's LinkedIn and Instagram URLs to `sameAs` in the JSON-LD
 - [ ] Invite Tanisha to the Slo-by-Lo GitHub organization
