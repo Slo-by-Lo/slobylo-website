@@ -2,7 +2,7 @@
    Change the number and the message below. The number is country code + number,
    digits only (no +, spaces or dashes), e.g. Singapore 6591234567.
    While WA_NUMBER is empty the button is not shown at all. */
-var WA_NUMBER = '';
+var WA_NUMBER = '6287797061371';
 var WA_MESSAGE = "Hi Slo, I'd like to talk about an experience for my brand.";
 
 (function () {
