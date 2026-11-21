@@ -53,7 +53,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 | `index.html` | The entire site: every section, all copy, and the small inline menu script |
 | `styles.css` | All styling. Brand tokens are CSS variables in `:root` at the top |
 | `assets/tanisha-lo.jpg` | Founder portrait used in `#about` (960×1200) |
-| `assets/photos/` | Site photography (JPEG, web-ready): `hero-beach-yoga`, `idea-terrace`, `evening-ceramic-wall`, `evening-sessions`, `evening-table`, `evening-beach-doorway`, `built-linen`, `contact-table`. Rules in §8 |
+| `assets/photos/` | Site photography (JPEG, web-ready): `hero-sea-silhouette`, `idea-terrace`, `evening-ceramic-wall`, `evening-sessions`, `evening-table`, `evening-beach-doorway`, `built-linen`, `contact-table`. Rules in §8 |
 | `assets/slo-logo.svg` | **Master logo** (vector): three organic rings + dot on navy. Use this file whenever the logo is needed elsewhere |
 | `favicon.svg` | The logo for the browser tab (same shapes, heavier lines so it reads at 16px) |
 | `favicon-48x48.png`, `apple-touch-icon.png` | PNG versions of `favicon.svg` (48×48 and 180×180). Regenerate both if the favicon changes. `apple-touch-icon.png` is also the `logo` in the JSON-LD |
@@ -69,7 +69,7 @@ The current copy, structure and photography are the approved "Preview C" design 
 ### Page sections (top to bottom, with HTML ids)
 
 1. Navigation (fixed, `#top`): logo left; Experiences · Ways to work · About · Contact us
-2. Hero: `hero-beach-yoga.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your brand" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
+2. Hero: `hero-sea-silhouette.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your brand" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
 3. `#idea` The problem — "Most wellness looks the same everywhere." — followed by a full-width photo (`idea-terrace.jpg`)
 4. `#range` Examples (no label) — "One method, a different answer each time.": Hotel · Restaurant · Fashion house · Lifestyle brand. **Illustrative, not client work**
 5. `#evening` "One evening, imagined" (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
@@ -210,7 +210,7 @@ The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the clo
 - Photos live in `assets/photos/` (the founder portrait stays at `assets/tanisha-lo.jpg`). They are web-ready; use the files as they are and do not re-compress them. Delete any photo the page no longer references.
 - **Everything shown is a sample, not a past Slo event.** The evening section is a sample and the Examples section is illustrative. Never caption a photo, or write copy around either, as if it were real client work.
 - **Do not use photos that show guests' faces or the venue's menu card.**
-- The hero is the beach yoga photo with the headline over it. The hero fade is the only approved gradient. No other gradients, shadows or rounded corners — photos sit as plain rectangles.
+- The hero is the sea silhouette photo with the headline over it. The hero fade is the only approved gradient. No other gradients, shadows or rounded corners — photos sit as plain rectangles.
 - The sample-evening section carries four photos, one per moment. Each sets its crop with an inline `--pos` on the `<figure>`.
 - Every `<img>` needs descriptive `alt` text and `width`/`height` attributes. Only the hero image gets `fetchpriority="high"`; every other photo keeps `loading="lazy"` and `decoding="async"`.
 - Direction for any future additions: golden hour, Bali/SEA, water, stone, linen, skin, botanicals; candid and editorial; warm shadows, desaturated highlights, film-like. Never bright white studio shots, activewear hero shots, smoothie bowls, or anything stock-looking.
