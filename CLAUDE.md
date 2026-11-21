@@ -16,7 +16,7 @@ It explains what this site is, how it was built, how it is hosted, and the rules
 
 - Audience: hotel GMs, F&B and lifestyle directors, developers, brand marketing leads
 - Tone: editorial, minimal, confident — closer to a fashion house than a spa (think Aesop, Bottega Veneta, Kinfolk)
-- Contact: tanisha@slobylo.com. Based in Bali + Singapore. On the visible page the location appears in the About credentials ("Based between Bali and Singapore.") and the footer ("Bali + Singapore"). It also stays in the meta description and JSON-LD
+- Contact: tanisha@slobylo.com. Based in Bali + Singapore. On the visible page the location appears only in the footer ("Bali + Singapore"); it was removed from About on 21 Nov 2026. It also stays in the meta description and JSON-LD
 
 The original design brief is `slo-website-design-brief.md` (kept in the Claude.ai project "Webdesigner"; ask the owner for it if it is not in this repo). The site has since been repositioned twice (Nov 2026 "Preview C", then the hotel-focused copy of 21 Nov 2026); where the brief and this file disagree, this file wins.
 
@@ -72,7 +72,7 @@ The current copy is the founder's full one-page rewrite of 21 November 2026, aim
 2. Hero: `hero-sea-silhouette.jpg` with the headline over it ("We design the wellness experience your hotel can't build in-house."), subhead and a solid "Work with us →" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
 3. `#evening` The Evening (dark) — "One evening, done right.": two intro paragraphs, then 4:00 PM · 5:00 PM · 6:15 PM · 8:00 PM, one photo per moment
 4. `#ways` How it works — "Three ways to work together.": 01 The Signature Event · 02 The Residency · 03 Full Partnership. No prices
-5. `#about` About (dark) — "Built from inside the industry.": founder portrait, bio, credentials, "Based between Bali and Singapore.", LinkedIn link
+5. `#about` About (dark) — "Built from inside the industry.": founder portrait, bio (credentials are in the bio), LinkedIn link
 6. `#contact` Contact — "Tell us about your property.": one line of prompts, a mailto button labelled with the email address (keep the subject and body exactly as written), `contact-table.jpg`
 7. Footer: logo, email, "Bali + Singapore", © 2026
 8. Floating WhatsApp button (`assets/whatsapp.js`), bottom right. Appears after the hero or 3 seconds, and hides while the contact section or footer is on screen
