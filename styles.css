@@ -334,7 +334,6 @@ a { color: inherit; text-decoration: none; }
 .about__bio > p { max-width: 52ch; font-size: 1.1rem; line-height: 1.7; color: var(--pale); }
 .about__bio > p + p { margin-top: 20px; }
 .bring { margin-top: 44px; max-width: 52ch; }
-.about__creds { padding-top: 20px; border-top: 1px solid var(--ruleDk); font-size: 1rem; line-height: 1.6; color: var(--pale-soft); }
 .about__link { margin-top: 28px; font-size: 1rem; }
 .textlink { color: var(--cream); border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
 .textlink:hover { border-bottom-color: var(--cream); }
