@@ -70,7 +70,7 @@ The current copy is the founder's full one-page rewrite of 21 November 2026, aim
 
 1. Navigation (fixed, `#top`): logo left; The Evening · How it works · About · Contact
 2. Hero: `hero-sea-silhouette.jpg` with the headline over it ("We design the wellness experience your hotel can't build in-house."), subhead and a solid "Work with us →" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
-3. `#evening` The Evening (dark) — "One evening, done right.": two intro paragraphs, then 4:00 PM · 5:00 PM · 6:15 PM · 8:00 PM, one photo per moment
+3. `#evening` The Evening (dark) — "One evening, done right.": two intro paragraphs, then 5:00 PM · 6:00 PM · 7:15 PM · 9:00 PM, one photo per moment
 4. `#ways` How it works — "Three ways to work together.": 01 The Signature Event · 02 The Residency · 03 Full Partnership. No prices
 5. `#about` About (dark) — "Built from inside the industry.": founder portrait, bio (credentials are in the bio), LinkedIn link
 6. `#contact` Contact — "Tell us about your property.": one line of prompts, a mailto button labelled with the email address (keep the subject and body exactly as written), `contact-table.jpg`
