@@ -11,6 +11,8 @@ Live at https://slobylo.com. Full handover notes for maintainers are in `CLAUDE.
 | `index.html` | The whole site — every section, all copy, inline menu script |
 | `styles.css` | All styling. Brand colours are tokens at the top (`:root`) |
 | `assets/tanisha-lo.jpg` | Founder portrait (About section) |
+| `assets/photos/` | Site photography (hero, the evening, contact) |
+| `assets/whatsapp.js` | Floating WhatsApp button |
 | `favicon.svg` | Browser-tab icon (logomark) |
 | `favicon-48x48.png`, `apple-touch-icon.png` | PNG icons for browsers and phones |
 | `assets/og-image.png` | Share image for link previews |
@@ -22,7 +24,7 @@ Live at https://slobylo.com. Full handover notes for maintainers are in `CLAUDE.
 
 ## Page sections (in order, as HTML ids)
 
-`#top` nav · hero · `#services` ledger · `#how` pipeline · `#evening` sample evening · `#why` · quote · `#about` · `#contact` · footer
+`#top` nav · hero · `#evening` The Evening · `#ways` How it works · `#about` · `#contact` · footer
 
 ## Editing rules (for whoever maintains this — human or Claude)
 
@@ -30,7 +32,7 @@ Follow `CLAUDE.md` and the design brief (`slo-website-design-brief.md`). The ess
 
 - Fonts: Cormorant Garamond italic 300 for headings, Plus Jakarta Sans 300 for body. Never bold headings.
 - Colours: only the tokens in `styles.css :root`. No pure black or white.
-- No rounded corners, no shadows, no gradients.
+- No rounded corners, no shadows, no gradients (the hero photo fade is the one exception).
 - Copy: short sentences. Never use *holistic, journey, transformative, wellness ritual, self-care, sacred, heal your body, empowering*. Headings are claims, not labels. No prices on the site — enquiries go to email.
 - "Slo" in third person; "I" only in Tanisha's bio.
 

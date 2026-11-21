@@ -9,16 +9,16 @@ It explains what this site is, how it was built, how it is hosted, and the rules
 
 **slobylo.com** is the marketing website for **Slo**, a luxury wellness consultancy founded by **Tanisha Lo**.
 
-**Positioning (Nov 2026):** Slo finds the wellness identity of a hotel, restaurant, fashion house or lifestyle brand and builds the offering that keeps guests coming back. Events are one format, not the product.
+**Positioning (21 Nov 2026):** Slo is a luxury wellness consultancy for hotels and hospitality brands across Southeast Asia. Slo brings the creative direction, the practitioners and the programming; the hotel's team delivers it. A single Slo evening is the entry point.
 
-- Services: **The Signature Experience**, **The Build** and **The Partnership**. No prices shown.
-- The evening section is a sample and the Examples section is illustrative. **Never present either as past client work.**
+- Services: **The Signature Event**, **The Residency** and **Full Partnership**. No prices shown.
+- The evening section describes the format of a Slo evening. **Never present it, or its photos, as a past client event.**
 
 - Audience: hotel GMs, F&B and lifestyle directors, developers, brand marketing leads
 - Tone: editorial, minimal, confident — closer to a fashion house than a spa (think Aesop, Bottega Veneta, Kinfolk)
-- Contact: tanisha@slobylo.com. Based in Bali + Singapore. On the visible page the location appears only in the footer ("Bali and Singapore"), not in body copy (decision, Nov 2026). It also stays in the meta description and JSON-LD
+- Contact: tanisha@slobylo.com. Based in Bali + Singapore. On the visible page the location appears in the About credentials ("Based between Bali and Singapore.") and the footer ("Bali + Singapore"). It also stays in the meta description and JSON-LD
 
-The original design brief is `slo-website-design-brief.md` (kept in the Claude.ai project "Webdesigner"; ask the owner for it if it is not in this repo). The site has since been repositioned (Nov 2026, "Preview C"); where the brief and this file disagree, this file wins.
+The original design brief is `slo-website-design-brief.md` (kept in the Claude.ai project "Webdesigner"; ask the owner for it if it is not in this repo). The site has since been repositioned twice (Nov 2026 "Preview C", then the hotel-focused copy of 21 Nov 2026); where the brief and this file disagree, this file wins.
 
 ---
 
@@ -26,16 +26,16 @@ The original design brief is `slo-website-design-brief.md` (kept in the Claude.a
 
 | Item | Status |
 |------|--------|
-| Site built | Done — single-page static site (redesigned Oct 2026, repositioned as a wellness-identity consultancy Nov 2026) |
+| Site built | Done — single-page static site (redesigned Oct 2026, repositioned Nov 2026, rewritten for hotels 21 Nov 2026) |
 | Repo | `github.com/Slo-by-Lo/slobylo-website` (public, branch `main`) |
 | Hosting | GitHub Pages, deploying from `main` / root |
 | Domain | slobylo.com, registered at Namecheap, DNS pointed to GitHub |
 | HTTPS | Done — certificate issued, **Enforce HTTPS** on |
 | Email tanisha@slobylo.com | Done — mailbox live (Nov 2026) |
-| Photography | Founder portrait (`assets/tanisha-lo.jpg`) in `#about`, plus eight photos in `assets/photos/` (hero, the problem, sample evening ×4, Built from the inside, contact) — see §8 |
+| Photography | Founder portrait (`assets/tanisha-lo.jpg`) in `#about`, plus six photos in `assets/photos/` (hero, the evening ×4, contact) — see §8 |
 
 ### Founder approval
-The current copy, structure and photography are the approved "Preview C" design (November 2026). Copy edits, the navy Approach section and a new founder portrait followed on 16 November 2026. The Approach section ("How we find it.") was removed on 19 November 2026 and its "What you keep" list moved under Ways to work. It replaced the October 2026 copy (old hero, tagline, closing quote and the five-service ledger), which is retired.
+The current copy is the founder's full one-page rewrite of 21 November 2026, aimed at hotels and hospitality brands. It removed the problem section ("Most wellness looks the same everywhere."), the four business-type examples, "Built from the inside", the About pull quote and "What you keep", and replaced the "Preview C" copy (wellness identity for any brand), which is retired. The hero photo and the visual system were kept.
 
 ---
 
@@ -53,11 +53,11 @@ The current copy, structure and photography are the approved "Preview C" design 
 | `index.html` | The entire site: every section, all copy, and the small inline menu script |
 | `styles.css` | All styling. Brand tokens are CSS variables in `:root` at the top |
 | `assets/tanisha-lo.jpg` | Founder portrait used in `#about` (960×1200) |
-| `assets/photos/` | Site photography (JPEG, web-ready): `hero-sea-silhouette`, `idea-terrace`, `evening-ceramic-wall`, `evening-sessions`, `evening-table`, `evening-beach-doorway`, `built-linen`, `contact-table`. Rules in §8 |
+| `assets/photos/` | Site photography (JPEG, web-ready): `hero-sea-silhouette`, `evening-beach-doorway`, `evening-sessions`, `evening-table`, `evening-ceramic-wall`, `contact-table`. Rules in §8 |
 | `assets/slo-logo.svg` | **Master logo** (vector): three organic rings + dot on navy. Use this file whenever the logo is needed elsewhere |
 | `favicon.svg` | The logo for the browser tab (same shapes, heavier lines so it reads at 16px) |
 | `favicon-48x48.png`, `apple-touch-icon.png` | PNG versions of `favicon.svg` (48×48 and 180×180). Regenerate both if the favicon changes. `apple-touch-icon.png` is also the `logo` in the JSON-LD |
-| `assets/og-image.png` | Share image for links (1200×630): "slo" wordmark + the hero line ("Every brand has a wellness identity. We find it.") on navy, logo rings faint on the right. Redrawn Nov 2026; if it changes, update `og:image:alt` too |
+| `assets/og-image.png` | Share image for links (1200×630): "slo" wordmark + the hero line ("We design the wellness experience your hotel can't build in-house.") on navy, logo rings faint on the right. Redrawn 21 Nov 2026; if it changes, update `og:image:alt` too |
 | `assets/fonts/` | Self-hosted fonts: Cormorant Garamond italic (300–400), Cormorant Garamond 300, Plus Jakarta Sans (300–600) |
 | `assets/whatsapp.js` | Floating WhatsApp button (markup, styles, behaviour). Number and message are variables at the top. Its circle and soft shadow are an approved exception to §6 (Nov 2026) |
 | `robots.txt`, `sitemap.xml` | Crawler rules and the sitemap — see §7 SEO |
@@ -68,17 +68,14 @@ The current copy, structure and photography are the approved "Preview C" design 
 
 ### Page sections (top to bottom, with HTML ids)
 
-1. Navigation (fixed, `#top`): logo left; Experiences · Ways to work · About · Contact us
-2. Hero: `hero-sea-silhouette.jpg` with the headline over it ("Every brand has a wellness identity. We find it."), subhead and a solid "Tell us about your brand" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
-3. `#idea` The problem — "Most wellness looks the same everywhere." — followed by a full-width photo (`idea-terrace.jpg`)
-4. `#range` Examples (no label) — "One method, a different answer each time.": Hotel · Restaurant · Fashion house · Lifestyle brand. **Illustrative, not client work**
-5. `#evening` "One evening, imagined" (dark) — "Three sessions. One long table. Thirty guests.": 4:00 PM The Threshold · 5:00 PM Awaken, Float, Align · 6:15 PM The Long Table · 8:00 PM The Close, one photo per moment. **A sample, not a past event**
-6. `#ways` Ways to work — "Three ways to work with Slo.": The Signature Experience · The Build · The Partnership, then "What you keep" and a second "Tell us about your brand" button. No prices
-7. `#built` "Built from the inside." — three reasons beside `built-linen.jpg`
-8. `#about` About (dark): pull quote, founder portrait, name and title, bio, credentials line (Monash, executive coach), LinkedIn link
-9. `#contact` Contact — "Tell us about your brand.": prompts for what to send, a mailto button with a pre-filled subject and body (keep it exactly as written), `contact-table.jpg`
-10. Footer: logo, email, "Bali and Singapore", LinkedIn, ©
-11. Floating WhatsApp button (`assets/whatsapp.js`), bottom right. Appears after the hero or 3 seconds, and hides while the contact section or footer is on screen
+1. Navigation (fixed, `#top`): logo left; The Evening · How it works · About · Contact
+2. Hero: `hero-sea-silhouette.jpg` with the headline over it ("We design the wellness experience your hotel can't build in-house."), subhead and a solid "Work with us →" button to `#contact`. The photo fades into the navy (the one approved gradient); text fades in once on load
+3. `#evening` The Evening (dark) — "One evening, done right.": two intro paragraphs, then 4:00 PM · 5:00 PM · 6:15 PM · 8:00 PM, one photo per moment
+4. `#ways` How it works — "Three ways to work together.": 01 The Signature Event · 02 The Residency · 03 Full Partnership. No prices
+5. `#about` About (dark) — "Built from inside the industry.": founder portrait, bio, credentials, "Based between Bali and Singapore.", LinkedIn link
+6. `#contact` Contact — "Tell us about your property.": one line of prompts, a mailto button labelled with the email address (keep the subject and body exactly as written), `contact-table.jpg`
+7. Footer: logo, email, "Bali + Singapore", © 2026
+8. Floating WhatsApp button (`assets/whatsapp.js`), bottom right. Appears after the hero or 3 seconds, and hides while the contact section or footer is on screen
 
 ---
 
@@ -159,7 +156,7 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 ### Typography
 - Headings: **Cormorant Garamond, italic, weight 300**. Never bold.
 - Body: **Plus Jakarta Sans, weight 300, 17px** (`1.0625rem`), line-height 1.75.
-- **Nothing below 14px.** Small labels (`.label`, e.g. "One evening, imagined", "What you keep") are 0.9rem (14.4px), weight 600, sentence case. As shipped, two bits of interface text sit under that: the skip link and the mobile "Menu" label. (The "BY LO" in the logo wordmark was removed in Nov 2026; the wordmark is now just "slo".) Do not add any more.
+- **Nothing below 14px.** Small labels (`.label`, currently unused) are 0.9rem (14.4px), weight 600, sentence case. As shipped, two bits of interface text sit under that: the skip link and the mobile "Menu" label. (The "BY LO" in the logo wordmark was removed in Nov 2026; the wordmark is now just "slo".) Do not add any more.
 
 ### Layout
 - Max width 1200px. Horizontal padding `clamp(24px, 6vw, 72px)`, 16px on mobile.
@@ -170,19 +167,19 @@ The site is intended to be maintained long-term by Tanisha using her own Claude 
 - No stock icons, no testimonial carousels, no booking widgets or calendar embeds — all enquiries go to email.
 
 ### Copy
-- Short sentences. Headings are claims or provocations, never labels ("Most wellness looks the same everywhere." not "The problem").
+- Short sentences. Headings are claims or provocations, never labels ("One evening, done right." not "The Evening").
 - **Never use:** holistic, journey, transformative, wellness ritual, self-care, sacred, heal your body, empowering.
 - Prefer: curated, authored, intentional, considered, distinct, precisely, quietly.
 - "Slo" in third person for the brand. "I" only in Tanisha's bio.
 - **No prices on the site** (decision, Oct 2026 — overrides the original brief). The three ways to work are described without fees; visitors email and Slo replies. Internal reference prices are in the founder's brief — do not publish them.
 
 ### Approved copy — do not change without the founder's sign-off
-All wording on the page is the approved "Preview C" copy (November 2026). Do not reword it, and keep the contact button's mailto link (subject and body) exactly as written. Anchor lines:
-- Hero: "Every brand has a wellness identity. We find it."
-- Subhead: "Slo defines what wellness means for your brand, then builds it: the evenings, the rituals, the people."
-- Services: The Signature Experience (Find it), The Build (Make it), The Partnership (Keep it alive).
+All wording on the page is the founder's copy of 21 November 2026. Do not reword it, and keep the contact button's mailto link (subject and body) exactly as written. Anchor lines:
+- Hero: "We design the wellness experience your hotel can't build in-house."
+- Subhead: "Slo is a luxury wellness consultancy for hotels and hospitality brands across Southeast Asia. We bring the creative direction, the practitioners, and the programming — your team delivers it."
+- Services: The Signature Event, The Residency, Full Partnership.
 
-The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the closing quote block, the five-service ledger) are retired from the page.
+The Preview C lines ("Every brand has a wellness identity. We find it.", the problem section, the four examples, The Signature Experience / The Build / The Partnership, "Built from the inside", "What you keep") and the October 2026 lines are retired from the page.
 
 ---
 
@@ -191,7 +188,7 @@ The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the clo
 ### Name formats
 - The brand is **Slo** everywhere: titles, metadata, structured data, screen-reader labels and visible copy (decision, Nov 2026). "Slo by Lo" survives only in the domain (slobylo.com, and `slobylo` as the JSON-LD `alternateName`). Do not reintroduce "Slo by Lo" or "Slo · by Lo".
 - Write the founder's name exactly as **Tanisha Lo**.
-- **Never mention Regent or IHG** in metadata or structured data.
+- **Never mention Regent or IHG** in metadata or structured data. The visible About bio names Tanisha's role at Regent Bali Canggu (IHG); that is approved body copy only.
 
 ### What is in place
 - `<title>`, meta description, Open Graph and Twitter tags in the `<head>` of `index.html`. The share image is `https://slobylo.com/assets/og-image.png`; meta image URLs must be absolute.
@@ -208,10 +205,10 @@ The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the clo
 ## 8. Photography
 
 - Photos live in `assets/photos/` (the founder portrait stays at `assets/tanisha-lo.jpg`). They are web-ready; use the files as they are and do not re-compress them. Delete any photo the page no longer references.
-- **Everything shown is a sample, not a past Slo event.** The evening section is a sample and the Examples section is illustrative. Never caption a photo, or write copy around either, as if it were real client work.
+- **No photo is from a past Slo event.** Never caption a photo, or write copy around one, as if it were real client work.
 - **Do not use photos that show guests' faces or the venue's menu card.**
 - The hero is the sea silhouette photo with the headline over it. The hero fade is the only approved gradient. No other gradients, shadows or rounded corners — photos sit as plain rectangles.
-- The sample-evening section carries four photos, one per moment. Each sets its crop with an inline `--pos` on the `<figure>`.
+- The evening section carries four photos, one per moment. Each sets its crop with an inline `--pos` on the `<figure>`.
 - Every `<img>` needs descriptive `alt` text and `width`/`height` attributes. Only the hero image gets `fetchpriority="high"`; every other photo keeps `loading="lazy"` and `decoding="async"`.
 - Direction for any future additions: golden hour, Bali/SEA, water, stone, linen, skin, botanicals; candid and editorial; warm shadows, desaturated highlights, film-like. Never bright white studio shots, activewear hero shots, smoothie bowls, or anything stock-looking.
 
@@ -224,7 +221,7 @@ The October 2026 lines (old hero, the "Michelin-level wellness" tagline, the clo
 - [x] Tanisha approved all site copy (Oct 2026)
 - [x] Photography and repositioning to the approved "Preview C" design (Nov 2026)
 - [x] Share image (`assets/og-image.png`) redrawn with the "slo" wordmark and hero line (Nov 2026)
-- [ ] `README.md` still carries the old section list — refresh when convenient
+- [x] Full copy rewrite for hotels and hospitality brands (21 Nov 2026)
 - [x] Open Graph share image, structured data, sitemap, favicons (Oct 2026)
 - [ ] Add Tanisha's LinkedIn and Instagram URLs to `sameAs` in the JSON-LD
 - [ ] Invite Tanisha to the Slo-by-Lo GitHub organization

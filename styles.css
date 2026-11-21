@@ -1,4 +1,4 @@
-/* Slo · by Lo — styles
+/* Slo — styles
    Palette, type and logomark follow the design brief.
    No gradients, shadows or rounded corners; the hero photo fade is the one approved gradient.
    Motion: one slow fade on load. */
@@ -221,8 +221,8 @@ a { color: inherit; text-decoration: none; }
   padding-right: max(var(--gutter), calc((100vw - 1200px) / 2));
 }
 .hero__body { align-self: end; padding: calc(var(--nav-h) + 72px) 0 clamp(56px, 10vh, 104px); }
-.hero__title { max-width: 9em; font-size: clamp(2.8rem, 5.2vw, 4.6rem); line-height: 1.02; color: var(--cream); text-wrap: balance; }
-.hero__sub { max-width: 31em; margin-top: 28px; font-size: 1.15rem; line-height: 1.65; color: rgba(237, 232, 222, 0.92); }
+.hero__title { max-width: 12em; font-size: clamp(2.5rem, 4.6vw, 4.1rem); line-height: 1.02; color: var(--cream); text-wrap: balance; }
+.hero__sub { max-width: 34em; margin-top: 28px; font-size: 1.15rem; line-height: 1.65; color: rgba(237, 232, 222, 0.92); }
 .hero .btn { margin-top: 36px; }
 .hero :focus-visible { outline-color: var(--gold); }
 
@@ -269,21 +269,12 @@ a { color: inherit; text-decoration: none; }
 .h2 { font-size: clamp(1.9rem, 3.8vw, 2.9rem); max-width: 18em; text-wrap: balance; }
 .h2--lg { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.06; max-width: 13em; }
 
-.note { margin-top: 0.4rem; font-size: 0.9rem; line-height: 1.5; color: var(--ink-soft); }
-.sec--navyXL .note { color: var(--pale-soft); }
 .intro { max-width: 56ch; margin-top: 20px; font-size: 1.15rem; line-height: 1.65; color: var(--ink); }
 .sec--navy .intro { color: var(--pale); }
+.evening__intro { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 4vw, 56px); margin-top: 8px; }
+@media (max-width: 760px) { .evening__intro { grid-template-columns: 1fr; gap: 0; } }
 .label { margin-bottom: 14px; font-size: 0.9rem; font-weight: 600; line-height: 1.4; color: var(--goldInk); }
 .sec--navy .label, .sec--navyXL .label { color: var(--gold); }
-
-/* ───────── The idea: a statement, then the terrace at full width ───────── */
-
-.idea__in { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(24px, 5vw, 80px); align-items: end; }
-.idea__p { max-width: 40ch; font-size: 1.2rem; line-height: 1.65; color: var(--ink); }
-.wide { margin: 0; background: var(--navyXL); }
-.wide img { display: block; width: 100%; height: clamp(260px, 50vw, 720px); object-fit: cover; object-position: 50% 62%; }
-
-@media (max-width: 760px) { .idea__in { grid-template-columns: 1fr; } }
 
 /* ───────── The evening: a run of show, one row per moment ───────── */
 
@@ -308,8 +299,7 @@ a { color: inherit; text-decoration: none; }
 }
 .run__photo { margin: 0; background: var(--navyXL); }
 .run__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: var(--pos, 50% 50%); }
-.run h3 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); }
-.run p { max-width: 38ch; margin-top: 12px; font-size: 1.05rem; line-height: 1.65; color: var(--pale); }
+.run p { max-width: 16em; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.2; color: var(--cream); }
 
 @media (max-width: 860px) {
   .run li { grid-template-columns: 1fr; gap: 16px; align-items: start; }
@@ -320,7 +310,7 @@ a { color: inherit; text-decoration: none; }
 /* ───────── Ways to work ───────── */
 
 .ways { margin-top: clamp(40px, 6vw, 72px); border-top: 1px solid var(--rule); }
-.ways li, .alongside article {
+.ways li {
   display: grid;
   grid-template-columns: 3.5rem minmax(0, 4fr) minmax(0, 7fr);
   column-gap: clamp(16px, 3vw, 48px);
@@ -328,80 +318,19 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--rule);
 }
 .ways__num { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(1.8rem, 2.8vw, 2.3rem); line-height: 1.12; font-variant-numeric: lining-nums; color: var(--goldInk); }
-.ways h3, .alongside h3 { font-size: clamp(1.8rem, 2.8vw, 2.3rem); }
+.ways h3 { font-size: clamp(1.8rem, 2.8vw, 2.3rem); }
 .ways__desc { max-width: 52ch; font-size: 1.1rem; line-height: 1.65; color: var(--navy); }
-.alongside { margin-top: clamp(40px, 5vw, 64px); }
-.alongside .label { margin-bottom: 0; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
-.alongside h3 { grid-column: 2; }
-.ways__cta { margin-top: clamp(40px, 5vw, 64px); }
 
 @media (max-width: 760px) {
-  .ways li, .alongside article { grid-template-columns: 2.6rem minmax(0, 1fr); row-gap: 12px; }
+  .ways li { grid-template-columns: 2.6rem minmax(0, 1fr); row-gap: 12px; }
   .ways__desc { grid-column: 2; }
 }
 
-/* ───────── What you keep (under Ways to work) ───────── */
+/* ───────── About ───────── */
 
-.keep { margin-top: clamp(48px, 6vw, 80px); display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: clamp(20px, 4vw, 56px); align-items: start; }
-.keep .label { margin: 0; padding-top: 16px; }
-.keep ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(24px, 4vw, 56px); }
-.keep li { padding: 15px 0; border-top: 1px solid var(--rule); font-size: 1.1rem; line-height: 1.4; color: var(--navy); }
-
-@media (max-width: 620px) {
-  .keep { grid-template-columns: 1fr; gap: 0; }
-  .keep .label { padding: 0 0 14px; }
-  .keep ul { grid-template-columns: 1fr; }
-}
-
-/* ───────── Range: the same method in four kinds of business ───────── */
-
-.range { margin-top: clamp(36px, 5vw, 60px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(24px, 3vw, 44px); }
-.range li { padding-top: 22px; border-top: 1px solid var(--rule); }
-.range h3 { font-size: clamp(1.6rem, 2.4vw, 2rem); }
-.range p { max-width: 30ch; margin-top: 10px; font-size: 1.05rem; line-height: 1.65; color: var(--ink); }
-
-@media (max-width: 900px) { .range { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 32px; } }
-@media (max-width: 520px) { .range { grid-template-columns: 1fr; } }
-
-/* ───────── Ways to work: two ways in ───────── */
-
-.doors { margin-top: clamp(40px, 6vw, 72px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(40px, 7vw, 112px); align-items: start; }
-.door { padding-top: 28px; border-top: 1px solid var(--navy); }
-.door > h3 { font-size: clamp(2rem, 3.4vw, 2.7rem); }
-.door > p { max-width: 40ch; margin-top: 12px; font-size: 1.1rem; line-height: 1.65; color: var(--ink); }
-.door ul, .door ol { margin-top: 28px; }
-.door li { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr); padding: 18px 0; border-top: 1px solid var(--rule); }
-.door li:last-child { border-bottom: 1px solid var(--rule); }
-.door .num { padding-top: 0.25em; }
-.door h4 { margin: 0; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.6rem; line-height: 1.15; color: var(--navy); }
-.door li p { margin-top: 6px; font-size: 1.02rem; line-height: 1.6; color: var(--ink); }
-
-@media (max-width: 860px) { .doors { grid-template-columns: 1fr; } }
-
-/* ───────── Built from the inside ───────── */
-
-.why { margin-top: clamp(40px, 6vw, 72px); display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
-.why__photo { margin: 0; background: var(--creamD); }
-.why__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
-.pillar { padding: clamp(24px, 3vw, 36px) 0; border-top: 1px solid var(--rule); }
-.pillar:last-child { border-bottom: 1px solid var(--rule); }
-.pillar h3 { font-size: clamp(1.8rem, 2.8vw, 2.3rem); }
-.pillar p { max-width: 48ch; margin-top: 12px; font-size: 1.1rem; line-height: 1.65; color: var(--ink); }
-
-@media (max-width: 760px) {
-  .why { grid-template-columns: 1fr; }
-  .why__photo { order: -1; }
-  .why__photo img { aspect-ratio: 3 / 2; }
-}
-
-/* ───────── About: her words first, then who is speaking ───────── */
-
-.about__quote { margin: 0; }
-.about__quote p { max-width: 17em; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(2.1rem, 4.8vw, 3.8rem); line-height: 1.12; color: var(--cream); text-wrap: balance; }
 .about { margin-top: clamp(48px, 7vw, 96px); display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
 .portrait { margin: 0; background: var(--navyL); }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; filter: sepia(0.22) saturate(0.78) contrast(0.96) brightness(0.94); }
-.about__head { margin-bottom: clamp(24px, 3vw, 36px); }
 .about__bio > p { max-width: 52ch; font-size: 1.1rem; line-height: 1.7; color: var(--pale); }
 .about__bio > p + p { margin-top: 20px; }
 .bring { margin-top: 44px; max-width: 52ch; }
@@ -420,9 +349,7 @@ a { color: inherit; text-decoration: none; }
 .contact__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(32px, 6vw, 96px); align-items: end; }
 .contact__photo { margin: 0; background: var(--creamD); }
 .contact__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
-.prompts { margin-top: clamp(28px, 4vw, 44px); max-width: 30em; border-top: 1px solid var(--rule); }
-.prompts li { padding: 14px 0; border-bottom: 1px solid var(--rule); font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(1.4rem, 2.2vw, 1.75rem); line-height: 1.2; color: var(--navy); }
-.contact__text { margin-top: 24px; font-size: 1.15rem; color: var(--ink); }
+.contact__text { max-width: 40ch; margin-top: clamp(24px, 3vw, 36px); font-size: 1.15rem; line-height: 1.65; color: var(--ink); }
 .contact .btn { margin-top: 28px; overflow-wrap: anywhere; }
 
 @media (max-width: 760px) {
